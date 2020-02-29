@@ -7,4 +7,6 @@ import co.com.samtel.entity.PersonaEntity;
 public interface IPersonaService {
 	
 	Optional<PersonaEntity> findById(Long id);
+	
+	Optional<PersonaEntity> saveRecord(PersonaEntity persona);
 }

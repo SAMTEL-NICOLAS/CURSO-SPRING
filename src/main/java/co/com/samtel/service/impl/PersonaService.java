@@ -20,4 +20,10 @@ public class PersonaService implements IPersonaService {
 		return personaRepository.findById(id);
 	}
 
+	@Override
+	public Optional<PersonaEntity> saveRecord(PersonaEntity persona) {
+		PersonaEntity personaResult = personaRepository.save(persona);
+		return Optional.of(personaResult);
+	}
+
 }

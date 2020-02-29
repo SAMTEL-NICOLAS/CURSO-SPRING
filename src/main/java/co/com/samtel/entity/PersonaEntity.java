@@ -14,7 +14,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "persona")
 @Getter @Setter
-public class PersonaEntity {
+public class PersonaEntity extends Auditable<String> {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "articulo_generator")
